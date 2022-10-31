@@ -1,8 +1,61 @@
 <html>
  <head>
-  <link rel="stylesheet" href="nav.css">
+<!--   <link rel="stylesheet" href="nav.css"> -->
+  <style>
+   h1, p {
+  margin: 20px;
+  color: #666;
+  line-height: 1.75em;
+}
+
+.nav-horizontal {
+  background-color: #fff;
+  overflow: hidden;
+  height: 3em;
+  width: 100%;
+  
+  .mask {
+    height: 5em;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .list {
+    display: inline-table;
+    margin: 0 auto;
+    max-width: 100%;
+    
+    li {
+    display: table-cell;
+    }
+
+    a {
+      display: block;
+      padding: 0 1em;
+      text-decoration: none;
+      color: #333;
+      height: 3em;
+      line-height: 3;
+      &:hover {
+        border-bottom: 2px solid black;
+        background-color: #f9f9f9;
+      }
+    }
+  }
+}
+
+
+
+//codepen用 reset
+*{box-sizing: border-box;}body{font-family:sans-serif;padding-top: 100px;width:100vw;background-color:#999;}
+
+   </style>
+  
+  
  </head>
 
+ <body>
 <h1>Horizontal Nav Sample</h1>
 
 <nav class="nav-horizontal">
@@ -27,3 +80,4 @@
 </nav>
 
 <p>Lorem ipsum dolor sit amet, probo senserit molestiae ut quo, odio vide ipsum per id. Quo eius ignota id, an usu dolorem ancillae, ius autem ponderum ut. In doctus fuisset persecuti eam, assueverit sadipscing pro ut. In malis moderatius duo.</p>
+</body>
