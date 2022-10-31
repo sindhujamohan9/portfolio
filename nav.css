@@ -1,14 +1,47 @@
-/* Navigation Bar */
-.navbar{
-  padding: 20px 10px 20px 0px;
-  background-color: #28a7e9;
-  transition: all ease 0.4s;
+h1, p {
+  margin: 20px;
+  color: #666;
+  line-height: 1.75em;
 }
-.navbar-brand{
-  font-size: 22px;
-  color: white !important;
+
+.nav-horizontal {
+  background-color: #fff;
+  overflow: hidden;
+  height: 3em;
+  width: 100%;
+  
+  .mask {
+    height: 5em;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .list {
+    display: inline-table;
+    margin: 0 auto;
+    max-width: 100%;
+    
+    li {
+    display: table-cell;
+    }
+
+    a {
+      display: block;
+      padding: 0 1em;
+      text-decoration: none;
+      color: #333;
+      height: 3em;
+      line-height: 3;
+      &:hover {
+        border-bottom: 2px solid black;
+        background-color: #f9f9f9;
+      }
+    }
+  }
 }
-.navbar .navbar-nav li a{
-  font-size: 16px;
-  color: white;
-}
+
+
+
+//codepen用 reset
+*{box-sizing: border-box;}body{font-family:sans-serif;padding-top: 100px;width:100vw;background-color:#999;}
