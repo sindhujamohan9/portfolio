@@ -70,7 +70,13 @@ margin: 10px;
      border-top: 2px solid #A9A9A9;
    
    }
-
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+   
 //codepen用 reset
 *{box-sizing: border-box;}body{font-family:sans-serif;padding-top: 100px;width:100vw;background-color:#999;}
 
@@ -113,10 +119,10 @@ margin: 10px;
 <nav class="nav-horizontal">
   <div class="mask">
     <ul class="list">
-      <li class="li-item"><a href="#" style="text-decoration:none" onclick="smoothScroll(document.getElementById('s4'))">Alpha</a></li>
-      <li class="li-item"><a href="#" style="text-decoration:none">Beta</a></li>
-      <li class="li-item"><a href="#" style="text-decoration:none">Gamma</a></li>
-      <li class="li-item"><a href="#" style="text-decoration:none">Delta</a></li>
+      <li class="li-item"><a href="#" style="text-decoration:none" onclick="smoothScroll(document.getElementById('s1'))">About</a></li>
+      <li class="li-item"><a href="#" style="text-decoration:none" onclick="smoothScroll(document.getElementById('s2'))">Projects</a></li>
+      <li class="li-item"><a href="#" style="text-decoration:none" onclick="smoothScroll(document.getElementById('s3'))">Education</a></li>
+      <li class="li-item"><a href="#" style="text-decoration:none" onclick="smoothScroll(document.getElementById('s4'))">Contact</a></li>
     
     </ul>
   </div>
@@ -133,53 +139,14 @@ margin: 10px;
 <div class="main-division">
  
  <div class=section id=s1>
- <h4>What is Lorem Ipsum?</h4>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
- when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
- It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
- It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
- and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
- </p>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
- when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
- It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
- It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
- and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
- </p>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
- when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
- It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
- It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
- and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
- </p>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
- when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
- It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
- It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
- and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
- </p>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
- when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
- It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
- It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
- and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
- </p>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
- when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
- It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
- It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
- and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
- </p>
+ <h4>Biography</h4>
+<p>I am a research intern at <a href="https://www.wisc.edu"><b>University of Wisconsin-Madison</b></a> where I was supervised by 
+ <a href="https://ramanathan.ece.wisc.edu"><b>Parmeswaran Ramanathan</b></a>. I received my Master's degree from <a href="https://www.ovgu.de"><b>Otto-von-Guericke-
+Universität Magdeburg</b></a> in 2019. I did my Bachelor's in <a href="https://www.gitam.edu"><b>GITAM University, India.</b></a> 
  </div>
  
  <div class=section id=s2>
- <h4>What is Lorem Ipsum?</h4>
+ <h4>Projects</h4>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
  when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -190,24 +157,27 @@ margin: 10px;
  </div>
  
  <div class=section id=s3>
- <h4>What is Lorem Ipsum?</h4>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
- when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
- It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
- It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
- and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
- </p>
+ <h4>Education</h4>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"><span style="font-weight:bold">Master's</span></th>
+    <th class="tg-0lax">OVGU, 2019</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:bold">Bachelor's</span></td>
+    <td class="tg-0lax">GITAM University, 2013</td>
+  </tr>
+</tbody>
+</table>
  </div>
  
  <div class=section id="s4">
- <h4>What is Lorem Ipsum?</h4>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
- when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
- It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
- It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
- and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+ <h4>Contact</h4>
+<p>email: sindhujamohan92@gmail.com </br>
+ Ph: (505)457-7721
  </p>
  </div>
  
