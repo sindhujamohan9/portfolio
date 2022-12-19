@@ -1,448 +1,363 @@
 <html>
- <head>
-<!--   <link rel="stylesheet" href="nav.css"> -->
-  <style>
-   .li-item {
-overflow: hidden;
-height: 40px;
-display: inline-block;
-margin: 5px;
-padding-top: 20px;
-font-family: Times New Roman;
-font-size: 22;
-height: 55px;
-padding-left: 10px;
-}
-   
-   h2, h4{
-   font-family: Times New Roman;
-   }   
-   
-   h1, p {
-margin: 20px;
-color: black;
-line-height: 1.75em;
-font-family: Times New Hiragino Maru Gothic ProN;
-font-size: 19;
-line-height: 118%;
-display: block;
-}
-
-.nav-horizontal {
- background-color: white;
- width: 100%;
- float: right;
-   }
-  
-  .mask {
-    width: 91%;
-overflow-x: auto;
--webkit-overflow-scrolling: touch;
-float: left;
-margin-top: -74px;
-margin-top: -84px;
-padding-top: 5px;
-margin-bottom: 30px;
-margin-left: 50px;
-
-  }
-  
-  .list {
-   display: inline-table;
-margin: 0 auto;
-max-width: 100%;
-float: right;
-margin-right: 11%;
-margin: -20px 0px 0px 0px;
-   
-   }
-    
-    li {
-    display: table-cell;
-      }
-   
-   .profile-pic {
-     float: left;
-     border-radius: 50%;
-    padding-left: 25px
-    
-       }
-   .name-card {
-  
-     float: left;
-     margin-left: 30px;
-     width: 40%;
-   }
-  .main-division{
-   padding: 20px;
-width: 1000;
-float: left;
-background-color: white;
-padding-bottom: 30px;
-border-bottom-style: solid;
-border-bottom-width: 0px;
-margin-bottom: -10px;
-   }
-   
-   .enclose{
-     height:100%;
-     width: 75%;
-     margin: 0 auto;
-   }
-   
-   .section{
-     border-top: 2px solid gray;
-   
-   }
-   
-.button{   
-background: #f9f9ff;
-padding: 10px;
-text-align: center;
-border-radius: 20px;
-color: black;
-line-height: 25px;
-border-color: #EEEEFF;
-color: #6495ED;
-font-family: Times New Roman;
-font-size: 20;
-}
-   
-   .button:hover{
-   background-color: #4682B4;
-   color:white;
-   border-bottom: 1px blue dotted;
-   }   
-   
-   .title {
-   font-size:20px;
-    font-style: italic;
-   }
-   
-   .hyperlink{
-    color: #1B3CBF;
-    text-decoration: none;
-    }
-   
-   .hyperlink:hover{
-   text-decoration: underline;
-   
-   }
-   
-   .section-header{
-    font-weight: bold;
-    font-size: 23;
-   }
-   
-   
- .link-button-pdf{
-color: #fff;
-opacity: 0.7;
-background: #6495ED;
-padding: px;
-font-size: 10pt;
-line-height: 20pt;
-border-radius: 5px;
--moz-border-radius: 4px;
--webkit-border-radius: 4px;
-height: 30px;
-}
-
-.link-button-pdf:hover {
-color: white;
-opacity: 1;
- background:  #4682B4;
-  }
-   
-   .work-experience{
-   padding: 10px; 
-    margin-bottom: 20px; 
-    margin-left: 10px;
-   
-   }
-   
-  .bwt-outline{
-   width:350px;
-    padding-left: 25px
-   
-   }
-   
-   .bwt-algorithm{
-
-    width: 100%;
-   
-   }
-   
-   
-   .column1 {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-.row1::after {
-  content: "";
-  clear: both;
-  display: table;
- padding-left:100px;
-}
-   
-   .thesis-outline{
-      width:250px;
-      display: block; 
-      margin-left: auto; 
-      margin-right: auto; 
-      width: 45%;
-   
-   }
-   
-   .tab { margin-left: 20px;
-	  line-height: 150%}
-   
-   a.link_button_pdf {
-		color: #fff; /* text color 6495ED 1B3CBF */
-		opacity: 0.7;
-		background:#6495ED;
-		padding: 4px 6px;
-		font-size: 13pt;
-		line-height: 20pt;
-		border-radius: 5px;
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
-	}
-	a.link_button_pdf:hover {
-		color:white;
-		opacity: 1; /* background-color:#6495ED;  (same background color as non-hover, but change the "opacity") */
-	}
-   
-   a.link_talk {
-		color: #fff; /* text color  f88379*/
-		opacity: 0.7;
-		background:#f88379;
-		padding: 4px 6px;
-		font-size: 13pt;
-		line-height: 20pt;
-		border-radius: 5px;
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
-	}
-	a.link_talk:hover {
-		color:white;
-		opacity: 1;
-	    	background-color:#f88379;
-	}
- 
-
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Times New Roman;font-size:14px;
-  overflow:hidden;padding:11px 11px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Times New Roman;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:11px 11px;word-break:normal;}
-.tg .tg-fa7u{border-color:#ffffff;font-size:18px;text-align:left;vertical-align:top}
-
-   
-
-   </style>
-  <script type="text/javascript">
-
-   window.smoothScroll = function(target) {
-    var scrollContainer = target;
-    do { //find scroll container
-        scrollContainer = scrollContainer.parentNode;
-        if (!scrollContainer) return;
-        scrollContainer.scrollTop += 1;
-    } while (scrollContainer.scrollTop == 0);
-
-    var targetY = 0;
-    do { //find the top of target relatively to the container
-        if (target == scrollContainer) break;
-        targetY += target.offsetTop;
-    } while (target = target.offsetParent);
-
-    scroll = function(c, a, b, i) {
-        i++; if (i > 30) return;
-        c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
-    }
-    // start scrolling
-    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}
-   
-   
-  </script>
-  
- </head>
-
- <body style="font-family: sans-serif;padding-top:0px;background-color:#EAECEE">
-  
-  <div class="enclose">
-  
-<div class="main-division" style="padding-bottom: 0px !important; border-bottom-style: solid !important; border-bottom-width: 0px !important; margin-bottom: -10px !important;">
-  
-<img src="images/pic.png" alt="Avatar" class="profile-pic" width="220"> 
- 
- <div class="name-card">
- <p><b style="font-size:28px;line-height:130%">Sindhuja Madabushi</b></br>
-  University of Wisconsin-Madison</br>
-  sindhujamohan92@gmail.com </br>
-
- 
- </p>
-
- </div>
- 
-<nav class="nav-horizontal">
-  <div class="mask">
-    <ul class="list">
-      <li class="li-item"><a href="#" style="text-decoration:none" class="button" onclick="smoothScroll(document.getElementById('s1'))">Biography</a></li>
-      <li class="li-item"><a href="#" style="text-decoration:none" class="button" onclick="smoothScroll(document.getElementById('s2'))">Projects</a></li>
-      <li class="li-item"><a href="#" style="text-decoration:none" class="button" onclick="smoothScroll(document.getElementById('s3'))">Publications</a></li>
-      <li class="li-item"><a href="#" style="text-decoration:none" class="button" onclick="smoothScroll(document.getElementById('s4'))">Work Experience</a></li>
-      <li class="li-item"><a href="#" style="text-decoration:none" class="button" onclick="smoothScroll(document.getElementById('s4'))">Contact</a></li>
-      <li class="li-item"><a style="text-decoration:none" class="button" href="Madabushi_Resume.pdf" download="Madabushi_Resume" target="_blank">CV</a></li>
+   <head>
+      <style>
+         .li-item {
+         overflow: hidden;
+         height: 40px;
+         display: inline-block;
+         margin: 5px;
+         padding-top: 20px;
+         font-family: Times New Roman;
+         font-size: 22;
+         height: 55px;
+         padding-left: 10px;
+         }
+         h2, h4{
+         font-family: Times New Roman;
+         }   
+         h1, p {
+         margin: 20px;
+         color: black;
+         line-height: 1.75em;
+         font-family: Times New Hiragino Maru Gothic ProN;
+         font-size: 19;
+         line-height: 118%;
+         display: block;
+         }
+         .nav-horizontal {
+         background-color: white;
+         width: 100%;
+         float: right;
+         }
+         .mask {
+         width: 91%;
+         overflow-x: auto;
+         -webkit-overflow-scrolling: touch;
+         float: left;
+         margin-top: -74px;
+         margin-top: -84px;
+         padding-top: 5px;
+         margin-bottom: 30px;
+         margin-left: 50px;
+         }
+         .list {
+         display: inline-table;
+         margin: 0 auto;
+         max-width: 100%;
+         float: right;
+         margin-right: 11%;
+         margin: -20px 0px 0px 0px;
+         }
+         li {
+         display: table-cell;
+         }
+         .profile-pic {
+         float: left;
+         border-radius: 50%;
+         padding-left: 25px
+         }
+         .name-card {
+         float: left;
+         margin-left: 30px;
+         width: 40%;
+         }
+         .main-division{
+         padding: 20px;
+         width: 1000;
+         float: left;
+         background-color: white;
+         padding-bottom: 30px;
+         border-bottom-style: solid;
+         border-bottom-width: 0px;
+         margin-bottom: -10px;
+         }
+         .enclose{
+         height:100%;
+         width: 75%;
+         margin: 0 auto;
+         }
+         .section{
+         border-top: 2px solid gray;
+         }
+         .button{   
+         background: #f9f9ff;
+         padding: 10px;
+         text-align: center;
+         border-radius: 20px;
+         color: black;
+         line-height: 25px;
+         border-color: #EEEEFF;
+         color: #6495ED;
+         font-family: Times New Roman;
+         font-size: 20;
+         }
+         .button:hover{
+         background-color: #4682B4;
+         color:white;
+         border-bottom: 1px blue dotted;
+         }   
+         .title {
+         font-size:20px;
+         font-style: italic;
+         }
+         .hyperlink{
+         color: #1B3CBF;
+         text-decoration: none;
+         }
+         .hyperlink:hover{
+         text-decoration: underline;
+         }
+         .section-header{
+         font-weight: bold;
+         font-size: 23;
+         }
+         .link-button-pdf{
+         color: #fff;
+         opacity: 0.7;
+         background: #6495ED;
+         padding: px;
+         font-size: 10pt;
+         line-height: 20pt;
+         border-radius: 5px;
+         -moz-border-radius: 4px;
+         -webkit-border-radius: 4px;
+         height: 30px;
+         }
+         .link-button-pdf:hover {
+         color: white;
+         opacity: 1;
+         background:  #4682B4;
+         }
+         .work-experience{
+         padding: 10px; 
+         margin-bottom: 20px; 
+         margin-left: 10px;
+         }
+         .bwt-outline{
+         width:350px;
+         padding-left: 25px
+         }
+         .bwt-algorithm{
+         width: 100%;
+         }
+         .column1 {
+         float: left;
+         width: 50%;
+         padding: 5px;
+         }
+         .row1::after {
+         content: "";
+         clear: both;
+         display: table;
+         padding-left:100px;
+         }
+         .thesis-outline{
+         width:250px;
+         display: block; 
+         margin-left: auto; 
+         margin-right: auto; 
+         width: 45%;
+         }
+         .tab { margin-left: 20px;
+         line-height: 150%}
+         a.link_button_pdf {
+         color: #fff; /* text color 6495ED 1B3CBF */
+         opacity: 0.7;
+         background:#6495ED;
+         padding: 4px 6px;
+         font-size: 13pt;
+         line-height: 20pt;
+         border-radius: 5px;
+         -moz-border-radius: 4px;
+         -webkit-border-radius: 4px;
+         }
+         a.link_button_pdf:hover {
+         color:white;
+         opacity: 1; /* background-color:#6495ED;  (same background color as non-hover, but change the "opacity") */
+         }
+         a.link_talk {
+         color: #fff; /* text color  f88379*/
+         opacity: 0.7;
+         background:#f88379;
+         padding: 4px 6px;
+         font-size: 13pt;
+         line-height: 20pt;
+         border-radius: 5px;
+         -moz-border-radius: 4px;
+         -webkit-border-radius: 4px;
+         }
+         a.link_talk:hover {
+         color:white;
+         opacity: 1;
+         background-color:#f88379;
+         }
+         .tg  {border-collapse:collapse;border-spacing:0;}
+         .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Times New Roman;font-size:14px;
+         overflow:hidden;padding:11px 11px;word-break:normal;}
+         .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Times New Roman;font-size:14px;
+         font-weight:normal;overflow:hidden;padding:11px 11px;word-break:normal;}
+         .tg .tg-fa7u{border-color:#ffffff;font-size:18px;text-align:left;vertical-align:top}
+      </style>
       
-    </ul>
-  </div>
-</nav>
-
-</div>
-
-<div class="main-division" style="padding-bottom: 0px !important;">
- 
- <div class=section id=s1>
- <p class="section-header">Biography<p>
-<p>I am a research intern at <a class="hyperlink" href="https://www.wisc.edu">University of Wisconsin-Madison</a> where I am supervised by 
- <a class="hyperlink" href="https://ramanathan.ece.wisc.edu">Parmeswaran Ramanathan</a>. I received my Master's degree from <a class="hyperlink" href="https://www.ovgu.de">Otto-von-Guericke Universität Magdeburg</a> in 2019. I did my Bachelor's in <a class="hyperlink" href="https://www.gitam.edu">GITAM University, India.</a> 
- </div>
- 
- <div class=section id=s2>
- <p class="section-header">Projects</p>
-<p class=title>Two-Cloud Private Read Alignment to a Public Reference Genome<p>
- <p>The large-scale nature of human genome necessitates outsourcing of genomic computations to public clouds. 
-   However, this raises some serious privacy concerns. 
-   We designed and developed a two-cloud private read alignment algorithm using the Burrows-Wheeler Transform and the FM-Index. Our paper is
-   accepted to Proceedings of Privacy Enhancing Technologies Symposium 2023.
-</p>
-  
-  <div class="row1" style="padding-left:100px">
-  <div class="column1" style="width:400px">
-    <img class="bwt-algorithm" src="images/BWT_outline.png" alt="BWT outline">
-  </div>
-  <div class="column1">
-    <img src="images/BWT_Algorithm.png" alt="BWT algorithm" style="width: 62%;padding-left:40px">
-  </div>
-</div>
- 
-  
-  <p class=title>Graph Sketches and Embeddings: A study of their Applications on Graph Databases (Master's Thesis)</p>
-  <p>An important practical consideration while processing large volumes of graph data is creating summaries of the data, 
-   since it is usually impractical to perform operations on the entire dataset. In my thesis, I studied graph sparsification and embedding
-   techniques and provided a performance study of thier effects on graph properties like page rank, betweenness centrality, community detection
-   and node similarity.
-</p>
-  
-  <img class="thesis-outline" src="images/masters_thesis_outline.png" alt="Thesis outline">
-  
-  <p class=title>Evaluation of High-Performance Application-level Caching of Generic Graph Structured Data</p>
-  <p>I studied different hashing techniques and implemented simple graph
-algorithms (adjacency lists, shortest path, and the minimum number of hops) on SNAP datasets, and made a comparison of the effects of the techniques
-   by running queries neo4j graph database.</p>
-  
-  
-  
-  <p class=title>Supporting non-relational models with flexible schema storage</p>
-  <p>This project deals with the comparison of performances of NoSQL data stores 
-   with relational data models using get and count operators. I also explored the tile-based architectures and provided a
-theoretical discussion on how the mappings from different NoSQL data stores and relational model to tile-based architectures might work.
-  </p>
-  
-  <div class="row1" style="padding-left:100px">
-  <div class="column1" style="width:400px">
-    <img class="bwt-algorithm" src="images/mapping_1.png" alt="BWT outline">
-  </div>
-  <div class="column1">
-    <img src="images/mapping_2.png" alt="BWT algorithm" style="width: 62%;padding-left:40px">
-  </div>
-</div>
- 
-  
-  
-  
-  
-   <p class=title><b>Research Interests</b></p>
-  <table cellpadding="4px" class="work-experience">
-   <tr><td><span>Data privacy for big data applications</span></td></tr>
-   <tr><td><span>Computational Genomics</span></td></tr>
-   <tr><td><span>Graph summarization and visualization</span></td></tr>
-   </table>
-  
-  
- </div>
- 
- <
- 
- <div class="section" id=s3 style="padding-bottom: 25px !important;">
- <p class="section-header">Publications</p>
-  <p class="tab">
-<a href="https://www.dbse.ovgu.de/Publikationen/Master_+und+Diplomarbeiten-p-146.html" target="_blank"> 	
-<b>Graph Sketches and Embeddings: A Study of their Applications in Graph Databases</b></a> <br>
-wwwiti.cs.uni-magdeburg.de </br>	  
-	  
-Sindhuja Madabushi 
-<a class="link_button_pdf" rel="external" href="madabushi2019graphsketches.pdf" download="madabushi_2019_graphsketches" target="_blank">pdf</a>
-<a class="link_talk" rel="external" href="defense_presentation 2.pdf" download="madabushi_2019_graphsketches_slides" target="_blank">slides</a>
-
-  
-  
-<!--  <p>
-  <a class="hyperlink" style="margin-bottom: 0px !important; margin-top: 0px !important;" href="madabushi2019graphsketches.pdf" download="Madabushi_Master_Thesis" target="_blank">
-Graph Sketches and Embeddings: A Study of their Applications in Graph Databases</a>
-  </p></br>
- <p style="margin-top: -35px !important; margin-bottom: 0px !important;" href="https://www.dbse.ovgu.de/Publikationen/Master_+und+Diplomarbeiten-p-146.html">Sindhuja Madabushi - 2019 - wwwiti.cs.uni-magdeburg.de </p> -->
-<!--   <button class="link-button-pdf"><a >PDF</a></button></p>  -->
-</div>
- 
-
-
-
- <div class=section id=s4>
- <p class="section-header">Work Experience</p>
-  
-<table cellpadding="4px" class="work-experience">
-<thead>
-  <tr>
-    <td><span>Student Research Intern</span></td>
-    <td><span>PiSA sales GmbH, Berlin Area</span></td>
-    <td><span>Sep 2017 - Oct 2018</span></td>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-fa7u">Software Engineer 1</td>
-    <td class="tg-fa7u">Innominds Software, Hyderabad, India</td>
-    <td class="tg-fa7u">Oct 2015 - Jun 2016</td>
-  </tr>
-  <tr>
-    <td class="tg-fa7u">Systems Engineer</td>
-    <td class="tg-fa7u"><span style="font-weight:400;font-style:normal;text-decoration:none">Tata Consultancy Services, Hyderabad, India</span></td>
-    <td class="tg-fa7u">Aug 2013 - Sep 2015</td>
-  </tr>
-</tbody>
-</table>
- </div>
- 
-
-
-
- <div class=section id="s5">
- <p class="section-header">Contact</p>
-  <p style="margin-top: -10px !important; margin-bottom: 0px !important;">email: sindhujamohan92@gmail.com </p></br>
-  <p style="margin-top: -10px !important; margin-bottom: 0px !important;"> Ph: (505)457-7721 </p> </br>
- <p><a class="hyperlink" href="https://www.linkedin.com/in/sindhuja-madabushi-2b749025/">LinkedIn<a></p>
- </div>
-  
-  
-</div>
-
-</div>
-</body>
+      <script type="text/javascript">
+         window.smoothScroll = function(target) {
+          var scrollContainer = target;
+          do { //find scroll container
+              scrollContainer = scrollContainer.parentNode;
+              if (!scrollContainer) return;
+              scrollContainer.scrollTop += 1;
+          } while (scrollContainer.scrollTop == 0);
+         
+          var targetY = 0;
+          do { //find the top of target relatively to the container
+              if (target == scrollContainer) break;
+              targetY += target.offsetTop;
+          } while (target = target.offsetParent);
+         
+          scroll = function(c, a, b, i) {
+              i++; if (i > 30) return;
+              c.scrollTop = a + (b - a) / 30 * i;
+              setTimeout(function(){ scroll(c, a, b, i); }, 20);
+          }
+          // start scrolling
+          scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+         }  
+      </script>
+   </head>
+   <body style="font-family: sans-serif;padding-top:0px;background-color:#EAECEE">
+      <!-- profile picture and name card -->
+      <div class="enclose">
+         <div class="main-division" style="padding-bottom: 0px !important; border-bottom-style: solid !important; border-bottom-width: 0px !important; margin-bottom: -10px !important;">
+            <img src="images/pic.png" alt="Avatar" class="profile-pic" width="220"> 
+            <div class="name-card">
+               <p><b style="font-size:28px;line-height:130%">Sindhuja Madabushi</b></br>
+                  University of Wisconsin-Madison</br>
+                  sindhujamohan92@gmail.com </br>
+               </p>
+            </div>
+            <!-- navigation -->
+            <nav class="nav-horizontal">
+               <div class="mask">
+                  <ul class="list">
+                     <li class="li-item"><a href="#" style="text-decoration:none" class="button" onclick="smoothScroll(document.getElementById('s1'))">Biography</a></li>
+                     <li class="li-item"><a href="#" style="text-decoration:none" class="button" onclick="smoothScroll(document.getElementById('s2'))">Projects</a></li>
+                     <li class="li-item"><a href="#" style="text-decoration:none" class="button" onclick="smoothScroll(document.getElementById('s3'))">Publications</a></li>
+                     <li class="li-item"><a href="#" style="text-decoration:none" class="button" onclick="smoothScroll(document.getElementById('s4'))">Work Experience</a></li>
+                     <li class="li-item"><a href="#" style="text-decoration:none" class="button" onclick="smoothScroll(document.getElementById('s4'))">Contact</a></li>
+                     <li class="li-item"><a style="text-decoration:none" class="button" href="Madabushi_Resume.pdf" download="Madabushi_Resume" target="_blank">CV</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div class="main-division" style="padding-bottom: 0px !important;">
+            <!-- Biography section -->
+            <div class=section id=s1>
+               <p class="section-header">Biography
+               <p>
+               <p>I am a research intern at <a class="hyperlink" href="https://www.wisc.edu">University of Wisconsin-Madison</a> where I am supervised by 
+                  <a class="hyperlink" href="https://ramanathan.ece.wisc.edu">Parmeswaran Ramanathan</a>. I received my Master's degree from <a class="hyperlink" href="https://www.ovgu.de">Otto-von-Guericke Universität Magdeburg</a> in 2019. I did my Bachelor's in <a class="hyperlink" href="https://www.gitam.edu">GITAM University, India.</a> 
+            </div>
+            <!-- projects section -->
+            <div class=section id=s2>
+               <p class="section-header">Projects</p>
+               <p class=title><b>Two-Cloud Private Read Alignment to a Public Reference Genome</b>
+               <p>
+               <p>The large-scale nature of human genome necessitates outsourcing of genomic computations to public clouds. 
+                  However, this raises some serious privacy concerns. 
+                  We designed and developed a two-cloud private read alignment algorithm using the Burrows-Wheeler Transform and the FM-Index. Our paper is
+                  accepted to Proceedings of Privacy Enhancing Technologies Symposium 2023.
+               </p>
+               <div class="row1" style="padding-left:100px">
+                  <div class="column1" style="width:400px">
+                     <img class="bwt-algorithm" src="images/BWT_outline.png" alt="BWT outline">
+                  </div>
+                  <div class="column1">
+                     <img src="images/BWT_Algorithm.png" alt="BWT algorithm" style="width: 62%;padding-left:40px">
+                  </div>
+               </div>
+               <p class=title><b>Graph Sketches and Embeddings: A study of their Applications on Graph Databases (Master's Thesis)</b></p>
+               <p>An important practical consideration while processing large volumes of graph data is creating summaries of the data, 
+                  since it is usually impractical to perform operations on the entire dataset. In my thesis, I studied graph sparsification and embedding
+                  techniques and provided a performance study of thier effects on graph properties like page rank, betweenness centrality, community detection
+                  and node similarity.
+               </p>
+               <img class="thesis-outline" src="images/masters_thesis_outline.png" alt="Thesis outline">
+               <p class=title><b>Evaluation of High-Performance Application-level Caching of Generic Graph Structured Data</b></p>
+               <p>I studied different hashing techniques and implemented simple graph
+                  algorithms (adjacency lists, shortest path, and the minimum number of hops) on SNAP datasets, and made a comparison of the effects of the techniques
+                  by running queries neo4j graph database.
+               </p>
+               <p class=title><b>Supporting non-relational models with flexible schema storage</b></p>
+               <p>This project deals with the comparison of performances of NoSQL data stores 
+                  with relational data models using get and count operators. I also explored the tile-based architectures and provided a
+                  theoretical discussion on how the mappings from different NoSQL data stores and relational model to tile-based architectures might work.
+               </p>
+               <div class="row1" style="padding-left:100px">
+                  <div class="column1" style="width:400px">
+                     <img class="bwt-algorithm" src="images/mapping_1.png" alt="BWT outline">
+                  </div>
+                  <div class="column1">
+                     <img src="images/mapping_2.png" alt="BWT algorithm" style="width: 62%;padding-left:40px">
+                  </div>
+               </div>
+               <p class=title><b>Research Interests</b></p>
+               <table cellpadding="4px" class="work-experience">
+                  <tr>
+                     <td><span>Data privacy for big data applications</span></td>
+                  </tr>
+                  <tr>
+                     <td><span>Computational Genomics</span></td>
+                  </tr>
+                  <tr>
+                     <td><span>Graph summarization and visualization</span></td>
+                  </tr>
+               </table>
+            </div>
+            <!-- publications -->
+            <div class="section" id=s3 style="padding-bottom: 25px !important;">
+               <p class="section-header">Publications</p>
+               <p class="tab">
+                  <a href="https://www.dbse.ovgu.de/Publikationen/Master_+und+Diplomarbeiten-p-146.html" target="_blank"> 	
+                  <b>Graph Sketches and Embeddings: A Study of their Applications in Graph Databases</b></a> <br>
+                  wwwiti.cs.uni-magdeburg.de </br>	  	  
+                  Sindhuja Madabushi 
+                  <a class="link_button_pdf" rel="external" href="madabushi2019graphsketches.pdf" download="madabushi_2019_graphsketches" target="_blank">pdf</a>
+                  <a class="link_talk" rel="external" href="defense_presentation 2.pdf" download="madabushi_2019_graphsketches_slides" target="_blank">slides</a>
+            </div>
+            <!-- work experience -->
+            <div class=section id=s4>
+               <p class="section-header">Work Experience</p>
+               <table cellpadding="4px" class="work-experience">
+                  <thead>
+                     <tr>
+                        <td><span>Student Research Intern</span></td>
+                        <td><span>PiSA sales GmbH, Berlin Area</span></td>
+                        <td><span>Sep 2017 - Oct 2018</span></td>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td class="tg-fa7u">Software Engineer 1</td>
+                        <td class="tg-fa7u">Innominds Software, Hyderabad, India</td>
+                        <td class="tg-fa7u">Oct 2015 - Jun 2016</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-fa7u">Systems Engineer</td>
+                        <td class="tg-fa7u"><span style="font-weight:400;font-style:normal;text-decoration:none">Tata Consultancy Services, Hyderabad, India</span></td>
+                        <td class="tg-fa7u">Aug 2013 - Sep 2015</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <!-- contacts -->
+            <div class=section id="s5">
+               <p class="section-header">Contact</p>
+               <p style="margin-top: -10px !important; margin-bottom: 0px !important;">email: sindhujamohan92@gmail.com </p>
+               </br>
+               <p style="margin-top: -10px !important; margin-bottom: 0px !important;"> Ph: (505)457-7721 </p>
+               </br>
+               <p><a class="hyperlink" href="https://www.linkedin.com/in/sindhuja-madabushi-2b749025/">LinkedIn<a></p>
+            </div>
+         </div>
+      </div>
+   </body>
